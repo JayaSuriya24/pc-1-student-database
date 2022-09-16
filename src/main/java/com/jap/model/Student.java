@@ -64,4 +64,13 @@ public class Student {
         result = 31 * result + (int) grade;
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "roll_number=" + roll_number +
+                ", name='" + name + '\'' +
+                ", grade=" + grade +
+                '}';
+    }
 }
