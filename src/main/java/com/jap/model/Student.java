@@ -18,4 +18,28 @@ public class Student {
         this.name = name;
         this.grade = grade;
     }
+
+    public int getRoll_number() {
+        return roll_number;
+    }
+
+    public void setRoll_number(int roll_number) {
+        this.roll_number = roll_number;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public char getGrade() {
+        return grade;
+    }
+
+    public void setGrade(char grade) {
+        this.grade = grade;
+    }
 }
