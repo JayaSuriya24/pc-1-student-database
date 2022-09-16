@@ -9,4 +9,8 @@ public class Student {
     private int roll_number;
     private String name;
     private char grade;
+
+    public Student() {
+    }
+
 }
