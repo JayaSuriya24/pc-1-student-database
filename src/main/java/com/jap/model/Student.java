@@ -13,4 +13,9 @@ public class Student {
     public Student() {
     }
 
+    public Student(int roll_number, String name, char grade) {
+        this.roll_number = roll_number;
+        this.name = name;
+        this.grade = grade;
+    }
 }
