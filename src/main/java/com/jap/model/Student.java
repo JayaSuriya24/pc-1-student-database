@@ -5,6 +5,8 @@
  */
 package com.jap.model;
 
+import java.util.Objects;
+
 public class Student {
     private int roll_number;
     private String name;
@@ -41,5 +43,25 @@ public class Student {
 
     public void setGrade(char grade) {
         this.grade = grade;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Student student = (Student) o;
+
+        if (roll_number != student.roll_number) return false;
+        if (grade != student.grade) return false;
+        return Objects.equals(name, student.name);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = roll_number;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + (int) grade;
+        return result;
     }
 }
