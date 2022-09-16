@@ -8,3 +8,5 @@ CREATE TABLE IF NOT EXISTS `school`.`student`(
 `name` varchar(40) not null,
 `grade` char not null
 );
+--query to select all the values in the table
+SELECT * FROM school.student;
